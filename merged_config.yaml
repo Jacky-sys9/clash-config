@@ -1,0 +1,1031 @@
+allow-lan: false
+dns:
+  default-nameserver:
+  - 119.29.29.29
+  - 223.5.5.5
+  - 114.114.114.114
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fallback:
+  - tls://1.12.12.12:853
+  - tls://223.5.5.5:853
+  - https://cloudflare-dns.com/dns-query
+  - https://dns.google/dns-query
+  fallback-filter:
+    geoip: true
+    ipcidr:
+    - 240.0.0.0/4
+    - 0.0.0.0/32
+  ipv6: false
+  listen: 0.0.0.0:1053
+  nameserver:
+  - https://1.12.12.12/dns-query
+  - https://223.5.5.5/dns-query
+  - https://doh.360.cn/dns-query
+  use-hosts: true
+external-controller: 0.0.0.0:9090
+log-level: silent
+mode: rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 PRO-A-香港-HK01
+  port: 17809
+  server: cctv11.hk.tencent-cloud01.net
+  servername: pro.hk01a.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-A-香港-HK02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 54615
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv11.hk.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 PRO-A-香港-HK03 '
+  port: 19988
+  server: cctv11.hk.tencent-cloud01.net
+  servername: pro.hk03.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-A-香港-HK04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 45232
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv11.hk.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 PRO-A-香港-HK05
+  port: 21555
+  server: cctv11.hk.tencent-cloud01.net
+  servername: pro.hk05.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-A-香港-HK06
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 57420
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv11.hk.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 PRO-A-香港-HK07
+  port: 21937
+  server: cctv11.hk.tencent-cloud01.net
+  servername: pro.hk07.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-A-香港-HK08
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 40240
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv11.hk.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 PRO-B-台湾-TW01
+  port: 22085
+  server: cctv8.tw.tencent-cloud01.net
+  servername: pro.tw02.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-B-台湾-TW02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 46132
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv8.tw.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 PRO-B-台湾-TW03
+  port: 40219
+  server: cctv8.tw.tencent-cloud01.net
+  servername: pro.tw01.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-B-台湾-TW04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 19117
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv8.tw.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: PRO-B-官网yuntijiasu.com
+  network: ws
+  port: 17808
+  server: cctv11.hk.tencent-cloud01.net
+  servername: pro.hk01.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+  ws-headers:
+    Host: pro.hk01.ladderspeed.top
+  ws-opts:
+    headers:
+      Host: pro.hk01.ladderspeed.top
+    path: /v2ray
+  ws-path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 PRO-C-日本-JP01
+  port: 37201
+  server: cctv12.jp.tencent-cloud01.net
+  servername: pro.jp01.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-C-日本-JP02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 53171
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv12.jp.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 PRO-C-日本-JP03
+  port: 37212
+  server: cctv12.jp.tencent-cloud01.net
+  servername: pro.jp03.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-C-日本-JP04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 18081
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv12.jp.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 PRO-C-日本-JP05
+  port: 37215
+  server: cctv12.jp.tencent-cloud01.net
+  servername: pro.jp05.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-C-日本-JP06
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 29684
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv12.jp.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇺🇲 PRO-D-美国-US01
+  port: 53237
+  server: cctv10.us.tencent-cloud01.net
+  servername: pro.usa01.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-D-美国-US02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 29839
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv10.us.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇺🇲 PRO-D-美国-US03
+  port: 53247
+  server: cctv10.us.tencent-cloud01.net
+  servername: pro.usa03.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-D-美国-US04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 4323
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv10.us.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇺🇲 PRO-D-美国-US05
+  port: 53257
+  server: cctv10.us.tencent-cloud01.net
+  servername: pro.usa05.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: PRO-D-美国-US06
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 60122
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv10.us.tencent-cloud01.net
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇺🇲 PRO-D-美国-US07
+  port: 18005
+  server: cctv10.us.tencent-cloud01.net
+  servername: pro.usa07.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇺🇲 PRO-D-美国-US08
+  port: 53206
+  server: cctv10.us.tencent-cloud01.net
+  servername: pro.usa08.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 PRO-E-韩国-KR01
+  port: 51234
+  server: cctv7.uk.kr.tencent-cloud01.net
+  servername: pro.kr01.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 PRO-E-韩国-KR02
+  port: 51248
+  server: cctv7.uk.kr.tencent-cloud01.net
+  servername: pro.kr02.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 PRO-F-新加坡-SG01
+  port: 51235
+  server: cctv9.sg.tencent-cloud01.net
+  servername: pro.sg01.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 PRO-F-新加坡-SG02
+  port: 51245
+  server: cctv9.sg.tencent-cloud01.net
+  servername: pro.sg02.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 PRO-F-英国-UK01
+  port: 19855
+  server: cctv7.uk.kr.tencent-cloud01.net
+  servername: gb01.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧 PRO-F-英国-UK02
+  port: 18011
+  server: cctv7.uk.kr.tencent-cloud01.net
+  servername: gb02.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇦🇺 PRO-H-澳大利亚-AU01
+  port: 24912
+  server: cctv.shcn2.01.yuntidns001.top
+  servername: pro.aus01.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 轻量-A-香港-HK01
+  port: 38092
+  server: cctv1.hk.tencent-cloud01.com
+  servername: air.hk01a.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-A-香港-HK02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 20245
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv1.hk.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 轻量-A-香港-HK03 '
+  port: 20216
+  server: cctv1.hk.tencent-cloud01.com
+  servername: air.hk03.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-A-香港-HK04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 6246
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv1.hk.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 轻量-A-香港-HK05
+  port: 15555
+  server: cctv1.hk.tencent-cloud01.com
+  servername: air.hk05.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-A-香港-HK06
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 11666
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv1.hk.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 轻量-B-台湾-TW01
+  port: 19073
+  server: cctv5.tw.tencent-cloud01.com
+  servername: air.tw02.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-B-台湾-TW02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 57014
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv5.tw.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇹🇼 轻量-B-台湾-TW03
+  port: 15544
+  server: cctv5.tw.tencent-cloud01.com
+  servername: air.tw01.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-B-台湾-TW04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 27514
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv5.tw.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 轻量-B-官网yunti.io
+  network: ws
+  port: 38090
+  server: cctv1.hk.tencent-cloud01.com
+  servername: air.hk05.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+  ws-headers:
+    Host: air.hk05.ladderlink.top
+  ws-opts:
+    headers:
+      Host: air.hk05.ladderlink.top
+    path: /v2ray
+  ws-path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 轻量-C-日本-JP01
+  port: 10128
+  server: cctv3.jp.tencent-cloud01.com
+  servername: jp01-v2.ladderspeed.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-C-日本-JP02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 21519
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv3.jp.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵 轻量-C-日本-JP03
+  port: 20243
+  server: cctv3.jp.tencent-cloud01.com
+  servername: jp01-v2.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-C-日本-JP04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 21549
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv3.jp.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇺🇲 轻量-D-美国-US01
+  port: 10241
+  server: cctv2.us.tencent-cloud01.com
+  servername: air.usa01.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-D-美国-US02
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 19763
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv2.us.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  port: 10243
+  server: cctv2.us.tencent-cloud01.com
+  servername: air.usa03.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-D-美国-US04
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 49763
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv2.us.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇺🇲 轻量-D-美国-US05
+  port: 10245
+  server: cctv2.us.tencent-cloud01.com
+  servername: air.usa05.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- cipher: chacha20-ietf
+  name: 轻量-D-美国-US06
+  obfs: plain
+  password: 4wMNkIVsgybXfA2u
+  port: 16700
+  protocol: auth_aes128_sha1
+  protocol-param: 187600:dIbL0K3um7svDIEP
+  server: cctv2.us.tencent-cloud01.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 轻量-E-新加坡-SG01
+  port: 29900
+  server: cctv4.sg.tencent-cloud01.com
+  servername: sg01-v2.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+- alterId: 0
+  cipher: auto
+  name: 🇸🇬 轻量-E-新加坡-SG02
+  port: 29909
+  server: cctv4.sg.tencent-cloud01.com
+  servername: sg02-v2.ladderlink.top
+  type: vmess
+  udp: true
+  uuid: 9cb433ca-fd07-3461-b3bf-052a52bc728e
+proxy-groups:
+- name: 🔰国外流量
+  proxies:
+  - 🇭🇰 PRO-A-香港-HK01
+  - PRO-A-香港-HK02
+  - '🇭🇰 PRO-A-香港-HK03 '
+  - PRO-A-香港-HK04
+  - 🇭🇰 PRO-A-香港-HK05
+  - PRO-A-香港-HK06
+  - 🇭🇰 PRO-A-香港-HK07
+  - PRO-A-香港-HK08
+  - 🇹🇼 PRO-B-台湾-TW01
+  - PRO-B-台湾-TW02
+  - 🇹🇼 PRO-B-台湾-TW03
+  - PRO-B-台湾-TW04
+  - PRO-B-官网yuntijiasu.com
+  - 🇯🇵 PRO-C-日本-JP01
+  - PRO-C-日本-JP02
+  - 🇯🇵 PRO-C-日本-JP03
+  - PRO-C-日本-JP04
+  - 🇯🇵 PRO-C-日本-JP05
+  - PRO-C-日本-JP06
+  - 🇺🇲 PRO-D-美国-US01
+  - PRO-D-美国-US02
+  - 🇺🇲 PRO-D-美国-US03
+  - PRO-D-美国-US04
+  - 🇺🇲 PRO-D-美国-US05
+  - PRO-D-美国-US06
+  - 🇺🇲 PRO-D-美国-US07
+  - 🇺🇲 PRO-D-美国-US08
+  - 🇰🇷 PRO-E-韩国-KR01
+  - 🇰🇷 PRO-E-韩国-KR02
+  - 🇸🇬 PRO-F-新加坡-SG01
+  - 🇸🇬 PRO-F-新加坡-SG02
+  - 🇬🇧 PRO-F-英国-UK01
+  - 🇬🇧 PRO-F-英国-UK02
+  - 🇦🇺 PRO-H-澳大利亚-AU01
+  - 🇭🇰 轻量-A-香港-HK01
+  - 轻量-A-香港-HK02
+  - '🇭🇰 轻量-A-香港-HK03 '
+  - 轻量-A-香港-HK04
+  - 🇭🇰 轻量-A-香港-HK05
+  - 轻量-A-香港-HK06
+  - 🇹🇼 轻量-B-台湾-TW01
+  - 轻量-B-台湾-TW02
+  - 🇹🇼 轻量-B-台湾-TW03
+  - 轻量-B-台湾-TW04
+  - 轻量-B-官网yunti.io
+  - 🇯🇵 轻量-C-日本-JP01
+  - 轻量-C-日本-JP02
+  - 🇯🇵 轻量-C-日本-JP03
+  - 轻量-C-日本-JP04
+  - 🇺🇲 轻量-D-美国-US01
+  - 轻量-D-美国-US02
+  - "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  - 轻量-D-美国-US04
+  - 🇺🇲 轻量-D-美国-US05
+  - 轻量-D-美国-US06
+  - 🇸🇬 轻量-E-新加坡-SG01
+  - 🇸🇬 轻量-E-新加坡-SG02
+  - 🚀直接连接
+  type: select
+- name: ⚓️其他流量
+  proxies:
+  - 🔰国外流量
+  - 🚀直接连接
+  type: select
+- name: ✈️Telegram
+  proxies:
+  - 🔰国外流量
+  - 🇭🇰 PRO-A-香港-HK01
+  - PRO-A-香港-HK02
+  - '🇭🇰 PRO-A-香港-HK03 '
+  - PRO-A-香港-HK04
+  - 🇭🇰 PRO-A-香港-HK05
+  - PRO-A-香港-HK06
+  - 🇭🇰 PRO-A-香港-HK07
+  - PRO-A-香港-HK08
+  - 🇹🇼 PRO-B-台湾-TW01
+  - PRO-B-台湾-TW02
+  - 🇹🇼 PRO-B-台湾-TW03
+  - PRO-B-台湾-TW04
+  - PRO-B-官网yuntijiasu.com
+  - 🇯🇵 PRO-C-日本-JP01
+  - PRO-C-日本-JP02
+  - 🇯🇵 PRO-C-日本-JP03
+  - PRO-C-日本-JP04
+  - 🇯🇵 PRO-C-日本-JP05
+  - PRO-C-日本-JP06
+  - 🇺🇲 PRO-D-美国-US01
+  - PRO-D-美国-US02
+  - 🇺🇲 PRO-D-美国-US03
+  - PRO-D-美国-US04
+  - 🇺🇲 PRO-D-美国-US05
+  - PRO-D-美国-US06
+  - 🇺🇲 PRO-D-美国-US07
+  - 🇺🇲 PRO-D-美国-US08
+  - 🇰🇷 PRO-E-韩国-KR01
+  - 🇰🇷 PRO-E-韩国-KR02
+  - 🇸🇬 PRO-F-新加坡-SG01
+  - 🇸🇬 PRO-F-新加坡-SG02
+  - 🇬🇧 PRO-F-英国-UK01
+  - 🇬🇧 PRO-F-英国-UK02
+  - 🇦🇺 PRO-H-澳大利亚-AU01
+  - 🇭🇰 轻量-A-香港-HK01
+  - 轻量-A-香港-HK02
+  - '🇭🇰 轻量-A-香港-HK03 '
+  - 轻量-A-香港-HK04
+  - 🇭🇰 轻量-A-香港-HK05
+  - 轻量-A-香港-HK06
+  - 🇹🇼 轻量-B-台湾-TW01
+  - 轻量-B-台湾-TW02
+  - 🇹🇼 轻量-B-台湾-TW03
+  - 轻量-B-台湾-TW04
+  - 轻量-B-官网yunti.io
+  - 🇯🇵 轻量-C-日本-JP01
+  - 轻量-C-日本-JP02
+  - 🇯🇵 轻量-C-日本-JP03
+  - 轻量-C-日本-JP04
+  - 🇺🇲 轻量-D-美国-US01
+  - 轻量-D-美国-US02
+  - "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  - 轻量-D-美国-US04
+  - 🇺🇲 轻量-D-美国-US05
+  - 轻量-D-美国-US06
+  - 🇸🇬 轻量-E-新加坡-SG01
+  - 🇸🇬 轻量-E-新加坡-SG02
+  type: select
+- name: 🎬Youtube
+  proxies:
+  - 🔰国外流量
+  - 🇭🇰 PRO-A-香港-HK01
+  - PRO-A-香港-HK02
+  - '🇭🇰 PRO-A-香港-HK03 '
+  - PRO-A-香港-HK04
+  - 🇭🇰 PRO-A-香港-HK05
+  - PRO-A-香港-HK06
+  - 🇭🇰 PRO-A-香港-HK07
+  - PRO-A-香港-HK08
+  - 🇹🇼 PRO-B-台湾-TW01
+  - PRO-B-台湾-TW02
+  - 🇹🇼 PRO-B-台湾-TW03
+  - PRO-B-台湾-TW04
+  - PRO-B-官网yuntijiasu.com
+  - 🇯🇵 PRO-C-日本-JP01
+  - PRO-C-日本-JP02
+  - 🇯🇵 PRO-C-日本-JP03
+  - PRO-C-日本-JP04
+  - 🇯🇵 PRO-C-日本-JP05
+  - PRO-C-日本-JP06
+  - 🇺🇲 PRO-D-美国-US01
+  - PRO-D-美国-US02
+  - 🇺🇲 PRO-D-美国-US03
+  - PRO-D-美国-US04
+  - 🇺🇲 PRO-D-美国-US05
+  - PRO-D-美国-US06
+  - 🇺🇲 PRO-D-美国-US07
+  - 🇺🇲 PRO-D-美国-US08
+  - 🇰🇷 PRO-E-韩国-KR01
+  - 🇰🇷 PRO-E-韩国-KR02
+  - 🇸🇬 PRO-F-新加坡-SG01
+  - 🇸🇬 PRO-F-新加坡-SG02
+  - 🇬🇧 PRO-F-英国-UK01
+  - 🇬🇧 PRO-F-英国-UK02
+  - 🇦🇺 PRO-H-澳大利亚-AU01
+  - 🇭🇰 轻量-A-香港-HK01
+  - 轻量-A-香港-HK02
+  - '🇭🇰 轻量-A-香港-HK03 '
+  - 轻量-A-香港-HK04
+  - 🇭🇰 轻量-A-香港-HK05
+  - 轻量-A-香港-HK06
+  - 🇹🇼 轻量-B-台湾-TW01
+  - 轻量-B-台湾-TW02
+  - 🇹🇼 轻量-B-台湾-TW03
+  - 轻量-B-台湾-TW04
+  - 轻量-B-官网yunti.io
+  - 🇯🇵 轻量-C-日本-JP01
+  - 轻量-C-日本-JP02
+  - 🇯🇵 轻量-C-日本-JP03
+  - 轻量-C-日本-JP04
+  - 🇺🇲 轻量-D-美国-US01
+  - 轻量-D-美国-US02
+  - "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  - 轻量-D-美国-US04
+  - 🇺🇲 轻量-D-美国-US05
+  - 轻量-D-美国-US06
+  - 🇸🇬 轻量-E-新加坡-SG01
+  - 🇸🇬 轻量-E-新加坡-SG02
+  type: select
+- name: 🎬ChatGPT
+  proxies:
+  - 🔰国外流量
+  - 🇭🇰 PRO-A-香港-HK01
+  - PRO-A-香港-HK02
+  - '🇭🇰 PRO-A-香港-HK03 '
+  - PRO-A-香港-HK04
+  - 🇭🇰 PRO-A-香港-HK05
+  - PRO-A-香港-HK06
+  - 🇭🇰 PRO-A-香港-HK07
+  - PRO-A-香港-HK08
+  - 🇹🇼 PRO-B-台湾-TW01
+  - PRO-B-台湾-TW02
+  - 🇹🇼 PRO-B-台湾-TW03
+  - PRO-B-台湾-TW04
+  - PRO-B-官网yuntijiasu.com
+  - 🇯🇵 PRO-C-日本-JP01
+  - PRO-C-日本-JP02
+  - 🇯🇵 PRO-C-日本-JP03
+  - PRO-C-日本-JP04
+  - 🇯🇵 PRO-C-日本-JP05
+  - PRO-C-日本-JP06
+  - 🇺🇲 PRO-D-美国-US01
+  - PRO-D-美国-US02
+  - 🇺🇲 PRO-D-美国-US03
+  - PRO-D-美国-US04
+  - 🇺🇲 PRO-D-美国-US05
+  - PRO-D-美国-US06
+  - 🇺🇲 PRO-D-美国-US07
+  - 🇺🇲 PRO-D-美国-US08
+  - 🇰🇷 PRO-E-韩国-KR01
+  - 🇰🇷 PRO-E-韩国-KR02
+  - 🇸🇬 PRO-F-新加坡-SG01
+  - 🇸🇬 PRO-F-新加坡-SG02
+  - 🇬🇧 PRO-F-英国-UK01
+  - 🇬🇧 PRO-F-英国-UK02
+  - 🇦🇺 PRO-H-澳大利亚-AU01
+  - 🇭🇰 轻量-A-香港-HK01
+  - 轻量-A-香港-HK02
+  - '🇭🇰 轻量-A-香港-HK03 '
+  - 轻量-A-香港-HK04
+  - 🇭🇰 轻量-A-香港-HK05
+  - 轻量-A-香港-HK06
+  - 🇹🇼 轻量-B-台湾-TW01
+  - 轻量-B-台湾-TW02
+  - 🇹🇼 轻量-B-台湾-TW03
+  - 轻量-B-台湾-TW04
+  - 轻量-B-官网yunti.io
+  - 🇯🇵 轻量-C-日本-JP01
+  - 轻量-C-日本-JP02
+  - 🇯🇵 轻量-C-日本-JP03
+  - 轻量-C-日本-JP04
+  - 🇺🇲 轻量-D-美国-US01
+  - 轻量-D-美国-US02
+  - "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  - 轻量-D-美国-US04
+  - 🇺🇲 轻量-D-美国-US05
+  - 轻量-D-美国-US06
+  - 🇸🇬 轻量-E-新加坡-SG01
+  - 🇸🇬 轻量-E-新加坡-SG02
+  type: select
+- name: 🎮Steam
+  proxies:
+  - 🚀直接连接
+  - 🔰国外流量
+  type: select
+- name: 🎬Netflix
+  proxies:
+  - 🔰国外流量
+  - 🇭🇰 PRO-A-香港-HK01
+  - PRO-A-香港-HK02
+  - '🇭🇰 PRO-A-香港-HK03 '
+  - PRO-A-香港-HK04
+  - 🇭🇰 PRO-A-香港-HK05
+  - PRO-A-香港-HK06
+  - 🇭🇰 PRO-A-香港-HK07
+  - PRO-A-香港-HK08
+  - 🇹🇼 PRO-B-台湾-TW01
+  - PRO-B-台湾-TW02
+  - 🇹🇼 PRO-B-台湾-TW03
+  - PRO-B-台湾-TW04
+  - PRO-B-官网yuntijiasu.com
+  - 🇯🇵 PRO-C-日本-JP01
+  - PRO-C-日本-JP02
+  - 🇯🇵 PRO-C-日本-JP03
+  - PRO-C-日本-JP04
+  - 🇯🇵 PRO-C-日本-JP05
+  - PRO-C-日本-JP06
+  - 🇺🇲 PRO-D-美国-US01
+  - PRO-D-美国-US02
+  - 🇺🇲 PRO-D-美国-US03
+  - PRO-D-美国-US04
+  - 🇺🇲 PRO-D-美国-US05
+  - PRO-D-美国-US06
+  - 🇺🇲 PRO-D-美国-US07
+  - 🇺🇲 PRO-D-美国-US08
+  - 🇰🇷 PRO-E-韩国-KR01
+  - 🇰🇷 PRO-E-韩国-KR02
+  - 🇸🇬 PRO-F-新加坡-SG01
+  - 🇸🇬 PRO-F-新加坡-SG02
+  - 🇬🇧 PRO-F-英国-UK01
+  - 🇬🇧 PRO-F-英国-UK02
+  - 🇦🇺 PRO-H-澳大利亚-AU01
+  - 🇭🇰 轻量-A-香港-HK01
+  - 轻量-A-香港-HK02
+  - '🇭🇰 轻量-A-香港-HK03 '
+  - 轻量-A-香港-HK04
+  - 🇭🇰 轻量-A-香港-HK05
+  - 轻量-A-香港-HK06
+  - 🇹🇼 轻量-B-台湾-TW01
+  - 轻量-B-台湾-TW02
+  - 🇹🇼 轻量-B-台湾-TW03
+  - 轻量-B-台湾-TW04
+  - 轻量-B-官网yunti.io
+  - 🇯🇵 轻量-C-日本-JP01
+  - 轻量-C-日本-JP02
+  - 🇯🇵 轻量-C-日本-JP03
+  - 轻量-C-日本-JP04
+  - 🇺🇲 轻量-D-美国-US01
+  - 轻量-D-美国-US02
+  - "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  - 轻量-D-美国-US04
+  - 🇺🇲 轻量-D-美国-US05
+  - 轻量-D-美国-US06
+  - 🇸🇬 轻量-E-新加坡-SG01
+  - 🇸🇬 轻量-E-新加坡-SG02
+  type: select
+- name: 🎬哔哩哔哩
+  proxies:
+  - 🚀直接连接
+  - 🇭🇰 PRO-A-香港-HK01
+  - PRO-A-香港-HK02
+  - '🇭🇰 PRO-A-香港-HK03 '
+  - PRO-A-香港-HK04
+  - 🇭🇰 PRO-A-香港-HK05
+  - PRO-A-香港-HK06
+  - 🇭🇰 PRO-A-香港-HK07
+  - PRO-A-香港-HK08
+  - 🇹🇼 PRO-B-台湾-TW01
+  - PRO-B-台湾-TW02
+  - 🇹🇼 PRO-B-台湾-TW03
+  - PRO-B-台湾-TW04
+  - PRO-B-官网yuntijiasu.com
+  - 🇯🇵 PRO-C-日本-JP01
+  - PRO-C-日本-JP02
+  - 🇯🇵 PRO-C-日本-JP03
+  - PRO-C-日本-JP04
+  - 🇯🇵 PRO-C-日本-JP05
+  - PRO-C-日本-JP06
+  - 🇺🇲 PRO-D-美国-US01
+  - PRO-D-美国-US02
+  - 🇺🇲 PRO-D-美国-US03
+  - PRO-D-美国-US04
+  - 🇺🇲 PRO-D-美国-US05
+  - PRO-D-美国-US06
+  - 🇺🇲 PRO-D-美国-US07
+  - 🇺🇲 PRO-D-美国-US08
+  - 🇰🇷 PRO-E-韩国-KR01
+  - 🇰🇷 PRO-E-韩国-KR02
+  - 🇸🇬 PRO-F-新加坡-SG01
+  - 🇸🇬 PRO-F-新加坡-SG02
+  - 🇬🇧 PRO-F-英国-UK01
+  - 🇬🇧 PRO-F-英国-UK02
+  - 🇦🇺 PRO-H-澳大利亚-AU01
+  - 🇭🇰 轻量-A-香港-HK01
+  - 轻量-A-香港-HK02
+  - '🇭🇰 轻量-A-香港-HK03 '
+  - 轻量-A-香港-HK04
+  - 🇭🇰 轻量-A-香港-HK05
+  - 轻量-A-香港-HK06
+  - 🇹🇼 轻量-B-台湾-TW01
+  - 轻量-B-台湾-TW02
+  - 🇹🇼 轻量-B-台湾-TW03
+  - 轻量-B-台湾-TW04
+  - 轻量-B-官网yunti.io
+  - 🇯🇵 轻量-C-日本-JP01
+  - 轻量-C-日本-JP02
+  - 🇯🇵 轻量-C-日本-JP03
+  - 轻量-C-日本-JP04
+  - 🇺🇲 轻量-D-美国-US01
+  - 轻量-D-美国-US02
+  - "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  - 轻量-D-美国-US04
+  - 🇺🇲 轻量-D-美国-US05
+  - 轻量-D-美国-US06
+  - 🇸🇬 轻量-E-新加坡-SG01
+  - 🇸🇬 轻量-E-新加坡-SG02
+  type: select
+- name: 🎬国外媒体
+  proxies:
+  - 🔰国外流量
+  - 🇭🇰 PRO-A-香港-HK01
+  - PRO-A-香港-HK02
+  - '🇭🇰 PRO-A-香港-HK03 '
+  - PRO-A-香港-HK04
+  - 🇭🇰 PRO-A-香港-HK05
+  - PRO-A-香港-HK06
+  - 🇭🇰 PRO-A-香港-HK07
+  - PRO-A-香港-HK08
+  - 🇹🇼 PRO-B-台湾-TW01
+  - PRO-B-台湾-TW02
+  - 🇹🇼 PRO-B-台湾-TW03
+  - PRO-B-台湾-TW04
+  - PRO-B-官网yuntijiasu.com
+  - 🇯🇵 PRO-C-日本-JP01
+  - PRO-C-日本-JP02
+  - 🇯🇵 PRO-C-日本-JP03
+  - PRO-C-日本-JP04
+  - 🇯🇵 PRO-C-日本-JP05
+  - PRO-C-日本-JP06
+  - 🇺🇲 PRO-D-美国-US01
+  - PRO-D-美国-US02
+  - 🇺🇲 PRO-D-美国-US03
+  - PRO-D-美国-US04
+  - 🇺🇲 PRO-D-美国-US05
+  - PRO-D-美国-US06
+  - 🇺🇲 PRO-D-美国-US07
+  - 🇺🇲 PRO-D-美国-US08
+  - 🇰🇷 PRO-E-韩国-KR01
+  - 🇰🇷 PRO-E-韩国-KR02
+  - 🇸🇬 PRO-F-新加坡-SG01
+  - 🇸🇬 PRO-F-新加坡-SG02
+  - 🇬🇧 PRO-F-英国-UK01
+  - 🇬🇧 PRO-F-英国-UK02
+  - 🇦🇺 PRO-H-澳大利亚-AU01
+  - 🇭🇰 轻量-A-香港-HK01
+  - 轻量-A-香港-HK02
+  - '🇭🇰 轻量-A-香港-HK03 '
+  - 轻量-A-香港-HK04
+  - 🇭🇰 轻量-A-香港-HK05
+  - 轻量-A-香港-HK06
+  - 🇹🇼 轻量-B-台湾-TW01
+  - 轻量-B-台湾-TW02
+  - 🇹🇼 轻量-B-台湾-TW03
+  - 轻量-B-台湾-TW04
+  - 轻量-B-官网yunti.io
+  - 🇯🇵 轻量-C-日本-JP01
+  - 轻量-C-日本-JP02
+  - 🇯🇵 轻量-C-日本-JP03
+  - 轻量-C-日本-JP04
+  - 🇺🇲 轻量-D-美国-US01
+  - 轻量-D-美国-US02
+  - "\U0001F1FA\U0001F1F2 轻量-D-美国-US03\t"
+  - 轻量-D-美国-US04
+  - 🇺🇲 轻量-D-美国-US05
+  - 轻量-D-美国-US06
+  - 🇸🇬 轻量-E-新加坡-SG01
+  - 🇸🇬 轻量-E-新加坡-SG02
+  type: select
+- name: 🍎苹果服务
+  proxies:
+  - 🚀直接连接
+  - 🔰国外流量
+  type: select
+- name: 🎨Adobe
+  proxies:
+  - 🔰国外流量
+  - ❗禁止连接
+  - 🚀直接连接
+  type: select
+- name: ❗禁止连接
+  proxies:
+  - REJECT
+  type: select
+- name: 🚀直接连接
+  proxies:
+  - DIRECT
+  type: select
+- name: 🎬Gemini
+  proxies:
+  - 🇺🇲 PRO-D-美国-US01
+  - DIRECT
+  type: select
+redir-port: 7892
+rules:
+- DOMAIN,chat.openai.com,🎬Gemini
+- DOMAIN,gemini.google.com,🎬Gemini
+- DOMAIN-SUFFIX,gemini.com,🎬Gemini
+- GEOIP,CN,DIRECT
+- MATCH,🔰国外流量
+secret: ''
+socks-port: 7891
